@@ -1,0 +1,17 @@
+[package]
+name = "frc-grafana"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.5.1"
+anyhow = "1.0.79"
+clap = { version = "4", features = ["derive", "env"] }
+futures = "0.3.30"
+# nt-rs = "0.0.1"
+nt = "3"
+prometheus-client = "0.22.1"
+rumqttc = "0.23.0"
+tokio = { version = "1.36.0", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"

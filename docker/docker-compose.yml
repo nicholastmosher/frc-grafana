@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+
+  mqtt:
+    image: rmqtt/rmqtt:latest
+    ports:
+      - "1883:1883"
+      - "8883:8883"
+      - "11883:11883"
+      - "6060:6060"
